@@ -3,7 +3,7 @@
 Unofficial re-design site for sitec.
 
 ## Install
-
+Python 3.8.3
 ```bash
 pip install -r requirements.txt
 ```
