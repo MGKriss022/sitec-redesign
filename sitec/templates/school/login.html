@@ -1,5 +1,83 @@
 {% extends 'school/base.html' %}
+{% load static %}
 
 {% block content %}
+
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
+
+    <div class="ui two column centered celled  stackable segment grid">
+        <div class=" seven wide tablet five wide computer column">
+            <h1 class="ui centered double massive header">SITEC</h1>
+
+            <div class="ui basic segment">
+                <form class="ui form">
+                    <div class="field">
+                        <label>Numero de control</label>
+                        <input type="text" name="username" autocomplete="username">
+                    </div>
+                    <div class="field">
+                        <label>Contraseña</label>
+                        <input type="password" name="password" autocomplete="current-password">
+                    </div>
+
+                    <button class="ui primary fluid button">Ingresar</button>
+
+                    <div class="ui center aligned basic segment no padding">
+                        <a href="">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    
+                    <button class="ui facebook labeled icon fluid button">
+                        <i class="facebook square icon"></i>
+                        Ingresar con Facebook
+                    </button>
+                </form>
+
+
+
+
+                <div class="ui divider"></div>
+
+                <span class="ui small grey text">
+                    Ahora también puedes ingresar usando tu cuenta de facebook, solo procura que el mail registrado en Facebook sea el mismo que registraste en el Departamento de Escolares.
+                </span>
+                
+            </div>
+
+
+        </div>
+        <div class="nine wide tablet eleven wide computer column no padding">
+            <div class="ui basic segment no padding welcome">
+            <img src="{% static 'assets/itt-background.jpg' %}" alt="" class="ui fluid image">
+                <div class="ui active sitec dimmer">
+                    <div class="content">
+
+                        <div class="ui hidden divider"></div>
+                        <div class="ui hidden divider"></div>
+
+                        <h1 class="ui centered massive inverted header">Bienvenidos a <span class="ui green text">SITEC</span></h1>
+
+                        <div class="ui left aligned basic segment">
+                            <p class="large line height"><span class="ui medium text">
+                                Para acceder, usa el Número de Control con la clave correspondiente. Una vez que hayas entrado, presiona en el menú superior "Reinscripción" para que inicies el procedimiento.
+                            </span></p>
+                
+                            <p class="large line height"><span class="ui medium text">
+                                Recuerda que podrás ingresar para reinscribirte a partir de la hora y fecha asignada, hasta antes del día de cierre de reinscripciones
+                            </span></p>
+                        </div>
+
+                    </div>
+                </div>
+ 
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
 
 {% endblock %}
