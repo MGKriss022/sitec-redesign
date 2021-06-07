@@ -1,0 +1,3 @@
+media/
+static_root/
+*.sqlite3
