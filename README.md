@@ -6,6 +6,7 @@ Unofficial re-design site for sitec.
 Python 3.8.3
 ```bash
 pip install -r requirements.txt
+python manage.py migrate
 ```
 
 ## Run
