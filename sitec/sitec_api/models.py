@@ -22,17 +22,33 @@ class SitecApi:
     is_connected = False
     headers = { 'User-Agent': 'Mozilla/5.0'}
 
-    def __init__(self):
-        self.session = requests.Session()
-
-    def login(self, control_number, password, captcha):
+    def __init__(self, session=None):
+        self.session = session
+        if not session:
+            self.session = requests.Session()
+            self.is_connected = True
+        
+    def login(self, **kwargs):
         response = self.session.post(self.LOGIN_URL, data={
-            'numero_control': control_number,
-            'clave': password,
-            'g-recaptcha-response': captcha
+            'numero_control': kwargs.pop('control_number'),
+            'clave': kwargs.pop('password'),
+            'g-recaptcha-response': kwargs.pop('captcha')
         })
         if response.status_code == 200:
             self.is_connected = True
+        return response
+
+    def retrieve_captcha(self):
+        response = self.session.get(self.LOGIN_URL)
+
+        if response.status_code == 200:
+            html = response.text
+            soup = BeautifulSoup(html, 'html.parser')
+            
+            captcha = None
+            return captcha
+        return None
+            
 
     def retrieve_panel_data(self):
         if not self.is_connected:
