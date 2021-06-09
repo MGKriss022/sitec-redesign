@@ -22,5 +22,7 @@ username: 18212163  pass: COFA000817
 <table>
   <tr>
     <td align="center"><a href="https://github.com/DictaVizor"><img src="https://avatars.githubusercontent.com/u/85518500?v=4" width="100px;" alt=""/><br /><sub><b>Victor Diaz</b></sub></a><br /></td>
+        <td align="center"><a href="https://github.com/ArzolaG"><img src="https://avatars.githubusercontent.com/u/85518500?v=4" width="100px;" alt=""/><br /><sub><b>Luis Arzola</b></sub></a><br /></td>
+        <td align="center"><a href="https://github.com/JaibaSuprema"><img src="https://avatars.githubusercontent.com/u/85518500?v=4" width="100px;" alt=""/><br /><sub><b>Adrian Cortez</b></sub></a><br /></td>
   </tr>
 <table>
