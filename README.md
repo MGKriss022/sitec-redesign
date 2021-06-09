@@ -1,6 +1,6 @@
 # sitec-redesign
 
-Unofficial re-design site for sitec.
+Unofficial re-design site for sitec. a
 
 ## Install
 Python 3.8.3
