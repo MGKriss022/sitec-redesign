@@ -18,5 +18,28 @@
 
         {% include 'school/footer.html' %}
     </div>
+    <!-- Sync Sitec Modal -->
+    <div class="ui mini sync sitec modal">
+        <i class="close icon"></i>
+        <div class="content">
+            <form class="ui sync sitec form">
+                <div class="field">
+                    <label>Numero de control</label>
+                    <input type="text" name="username">
+                </div>
+                <div class="field">
+                    <label>Contraseña</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="field">
+                    <label>Captcha Token</label>
+                    <textarea name="captcha"></textarea>
+                </div>
+            </form>
+            </div>
+            <div class="actions">
+                <button class="ui approve button">Sincronizar</button>
+            </div>
+        </div>
 </body>
 </html>
