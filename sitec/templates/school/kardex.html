@@ -1,5 +1,23 @@
-{% extends 'school/base.html' %}
+{% extends 'school/base.html' %} {% block content %}
 
-{% block content %}
-
+<div class="kardex-container">
+	<div class="ui container center aligned">
+		<h1>Kárdex</h1>
+	</div>
+	<div class="ui container segment center aligned">
+		<i class="angle left icon"></i>
+		<span class="ui text large" style="margin: 0 40px">Semestre 6</span>
+		<i class="angle right icon"></i>
+	</div>
+	<div class="ui container center aligned">
+		<div class="ui segment" style="background-color: #ffb27a">
+			<p><span style="font-weight: bold">Materia: </span><span>Ingeniería de Software</span></p>
+			<p><span style="font-weight: bold">Código de materia: </span><span>SCD-1011</span></p>
+		</div>
+		<div class="ui segment" style="background-color: #c3f1b8">
+			<p><span style="font-weight: bold">Materia: </span><span>Taller de Sistemas Operativos</span></p>
+			<p><span style="font-weight: bold">Código de materia: </span><span>SCA-1026</span></p>
+		</div>
+	</div>
+</div>
 {% endblock %}
