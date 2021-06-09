@@ -14,6 +14,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+## Cuentas
+username: 18212163  pass: COFA000817
+
 ## Contributors
 
 <table>
